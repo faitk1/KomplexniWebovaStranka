@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Diskord: Karel F. (Karel F.#9842) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/query.css">
+    <script src="https://kit.fontawesome.com/e1dba1d450.js" crossorigin="anonymous"></script>
+        <title>Karel Fait - Komplexní webová stránka</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/emptyNow_PutCOmpanyLogoHere.png" alt="">
+        </div> 
+
+        <nav>
+            <ul>
+                <li><a href="#">Domů</a></li>
+                <li><a href="#applications">Aplikace</a></li>
+                <li><a href="#alertReg">Alert</a></li>
+				<li><a href="#" class="clickMode">Dark/Light mode</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+    </header>
+    <main >
+            <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top">Nahoru</button>
+        <section class="section-applications" id="applications">
+            
+                <div class="section-applications-box section-applications-box-url1">    
+                    <a href="#ord"><p>ORDERING</p></a>                
+                </div>
+            
+            
+            <div class="section-applications-box section-applications-box-url2">
+                <a href="#prov"><p>PROVISIONING</p></a>                    
+            </div>
+            
+            <div class="section-applications-box section-applications-box-url3">
+                <a href="#bill"><p>BILLING</p></a>                    
+            </div>    
+        
+        </section>
+        <div class="section_delimiter">
+            <div class="box_delimiter text-content">
+                <h3>Ukazatel stavu aplikací</h3>
+                <p>V této sekci naleznete informace o okatuálním stavu jednotlivých aplikací. Lze se řídit barvami známými ze semaforů, je-li v aplikaci problém, příslušná hláška z logu aplikace se zobrazí červeně.</p>            
+            </div>
+        </div>
+    
+
+        <section class="appl ordering" id="ord">
+            <!-- <div class="section-appl-item-box section-appl-item-box-url1">    
+                <p>ORDERING</p>                
+            </div> -->
+            <p>    
+                <h1>Ordering</h1>
+                <p>Informace z objednávkové aplikace. Zde najdete základní informace o stavu aplikace. </p>
+                <form>
+                    <textarea name="orderingTA" id="o1" rows="10">
+                        Stav aplikace: OK
+                    </textarea>
+                    
+                </form>                
+            </p>
+        </section>
+        <section class="appl provisioning" id="prov">
+            <p>    
+                <h1>Provisioning</h1>
+                <p>Informace z aplikace zodpovědné za realizaci požadavků v síti. Zde najdete základní informace o stavu aplikace. </p>
+                <form>
+                    <textarea name="provisioningTA" id="p1" rows="10">
+                        Stav aplikace: OK
+                    </textarea>
+                    
+                </form>                
+            </p>
+        </section>
+        <section class="appl billing" id="bill">
+            <p>    
+                <h1>Billing</h1>
+                <p>Informace z aplikace zodpovědné za účtování. Zde najdete základní informace o stavu aplikace. </p>
+                <form>
+                    <textarea name="billingTA" id="b1" rows="10">
+                        Stav aplikace: OK
+                    </textarea>
+                    
+                </form>                
+            </p>
+        </section>
+        <div class="section_delimiter" id="alertReg">
+            <div class="box_delimiter text-content">
+                <h3>Registrace k odběru upozornění na chybu.</h3>
+                <p>V této sekci je pro vás k dispozici formulář pro registraci k odberu upozornění na problémy v a aplikaci. Registrací dáváte souhlas k zasílání zpráv na vaši e-mailovou adresu v případě problémů v aplikaci.</p>            
+            </div>
+        </div>
+
+        <section class="section-form">
+            <h3>Registrace k odběru alertů:</h3>
+            <p>Zde můžete registrovat vaší e-mailovou adresu k odběru chybpvých hlášení z výše uvedených aplikací. 
+                Uvedením vašeho jména a e=mailové adresy souhlasíte s odběrem veškerých alertů, které uvedené aplikace generují. 
+            V případě že se chcete přihlásit k odběru alertů pouze z vybraných aplikací, proveďte registraci a následně nás kontaktujte
+        na telefonním čísle: +42099999999 pro upřesnění vyšeho výběru.</p>
+            <form class="section-form-form">            
+                <label for="fullName">Jméno a příjmení:</label><br>
+                <input type="text" placeholder="Jméno a příjmení" class="fullName formItems" name="fullName"><br>
+                <label for="passwd1">Heslo:</label><br>
+                <input type="text" placeholder="Heslo" class="passwd1 formItems" name="fullName"><br>
+                <label for="passwd2">Heslo znovu:</label><br>
+                <input type="text" placeholder="Heslo znovu" class="passwd2 formItems" name="fullName"><br>
+                <p class="result-text"></p>
+                <input type="submit" value="Registrovat">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+          <div class="footer-copyright">Copyright © Karel Fait 2023.</div>
+          <div>
+            All Rights Reserved. This material may not be reproduced, displayed,
+            modified, or distributed in any way without the prior written
+            permission of Artful Solutions. Unauthorized use is strictly
+            prohibited.
+          </div>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
