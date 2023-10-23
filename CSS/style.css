@@ -1,0 +1,239 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************
+    Header
+*****************/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: #15304c;
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 30px;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+}
+
+
+/*********************
+    Welcome section
+*********************/
+.welcome {
+    min-height: calc(100vh - 70px);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.section-form-form {
+    margin: 20px; 
+    margin-top: 40px;
+}
+
+.formItems {
+     margin-bottom: 15px;
+}
+
+.form-submit {
+    display:block;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.appl {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.section-applications {
+    border: 1px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    /* margin: 10%; */
+}
+
+.section_delimiter {
+    max-width: 1440px;
+    background-color: #15304c;
+    border-radius: 10px;
+    border-color: black;
+    border: 1px;
+    margin-top: 30px;
+}
+
+.text-content h3 {
+    align-items: center;
+}
+
+.box_delimiter {
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.text-content {
+    text-align: justify;
+    font-family: Roboto;
+    font-size: small;
+    font-weight: 300;
+    }
+.text-content h3 {
+        text-align: center;
+    }
+
+.section-applications-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc((100% / 3) - 20px);
+    margin: 5px;
+    height: 140px;
+    background-size: cover;
+    border-radius: 5px;
+    object-fit: contain;
+    border: 1;
+    color: black; /*    zajistuje cerny text v obrazku i pro zmene dark/light mode*/
+    transition: all 0.5s linear;
+}
+
+
+.section-applications-box-url1
+    {
+
+        background-image: url(../img/ordering.jpg);
+ }
+
+ .section-applications-box-url2
+    {
+
+        background-image: url(../img/provisioning.jpg);
+ }
+ .section-applications-box-url3
+    {
+
+        background-image: url(../img/billing.jpg);
+ }
+
+ .section-appl-item-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px;
+    height: 50px;
+    width: 20%;
+    background-size: cover;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1;
+    color: black; /*    zajistuje cerny text v obrazku i pro zmene dark/light mode*/
+    transition: all 0.5s linear;
+}
+
+
+.section-appl-item-box-url1
+    {
+        background-image: url(../img/ordering.jpg);
+ }
+
+
+
+/* Stylování upozornění */
+.valid {
+    color: greenyellow;
+}
+
+.invalid {
+    color: red;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+  }
+
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.footer-copyright {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+
+/* Navstevnik s mobilem bude mit aboutUs sekci boxz pod sebou, dalsi sekce obdobne*/
+@media only screen and (max-width: 600px) {
+
+.section-applications {
+        display: block;
+}
+
+header {
+    height: 200px;
+}
+
+
+
+}
+
+
+
+
