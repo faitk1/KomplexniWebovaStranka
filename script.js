@@ -81,6 +81,9 @@ pass1.addEventListener("input", () => {
         paragraphText.classList.add("invalid")
         paragraphText.classList.remove("valid")
     }
+    if (pass1Value == "" && pass2Value == "") {   
+        paragraphText.textContent = ""        
+    }  
 })
 
 //kontrolní pole pro heslo
@@ -97,6 +100,9 @@ pass2.addEventListener("input", () => {
 ,        paragraphText.classList.add("invalid")
         paragraphText.classList.remove("valid")
     }
+    if (pass1Value == "" && pass2Value == "") {   
+        paragraphText.textContent = ""            
+    }       
 })
 
 // Tlacitko nahoru
